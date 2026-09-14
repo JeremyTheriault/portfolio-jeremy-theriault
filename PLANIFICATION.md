@@ -16,4 +16,4 @@ Mutlipages
 
 # Hébergement 
 
-Github
+Github-pages
