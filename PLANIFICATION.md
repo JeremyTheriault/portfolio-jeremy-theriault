@@ -1,14 +1,14 @@
-# Base de donnée
+# Gestion des données
 
-affiché de façon asynchrone.
+Fichier JSON local
 
 # Animation 
 
-Bulle
+Bulle (Scroll)
 
-Pourcentage
+Pourcentage(CSS)
 
-Texte coloré avec un texte gradient
+Texte coloré avec un texte gradient (CSS)
 
 # Navigation 
 
