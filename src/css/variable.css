@@ -3,13 +3,20 @@
 
     --primary-color: #ffffff;
     --secondary-color: #0e0038;
-    --bg-color: #070118;
+    --bg-color: linear-gradient(180deg, #000000 0%, #07031a 38%, #0D0824 87%, #000000 100%);
     --font-color: #ffffff;
     --font-color-sky-blue:#7DC0FF;
+
+    --title-gradient: linear-gradient(135deg, #00FFFF 24%, #00A26F 80%);
+    --btn-blue: linear-gradient(135deg, #4EC4FF 24%, #002D8E 80%);
+
 
     --bg-projet:#090724;
     --bg-titre-projet:#193E50;
     --bd-titre-projet:#7CC8FF;
     --competences-color:#465974;
     --competences-color-text:#67B5BE;
+
+    --lgg-bar:#0F172A;
+    --lgg-gradient: linear-gradient(135deg, #2563EB 24%, #22D3EE 50%, #67E8F9 100%);
 }

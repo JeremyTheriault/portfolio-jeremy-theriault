@@ -18,7 +18,7 @@
     justify-content: center;
     color: var(--font-color);
     background-color: var(--bg-projet);
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 30px 0;
     padding: 30px;
     border: 2px solid var(--primary-color );
@@ -36,7 +36,8 @@
         background-color: var(--bg-titre-projet);
         border: 2px solid var(--bd-titre-projet);
         border-radius:8px;
-        padding: 5px;
+        padding: 5px 10px;
+        text-align: center;
     }
 
     h4{
@@ -47,12 +48,15 @@
 
     p{
         width: 50%;
+        padding: 2vw 0;
+        font-size: 1.5vw;
     }
 
     .competences{
         display: flex;
         gap: 10px;
         margin-top: 10px;
+        justify-content: flex-start;
     }
 
     .competences span{
