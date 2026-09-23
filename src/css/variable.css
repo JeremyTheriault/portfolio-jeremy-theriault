@@ -1,12 +1,15 @@
 :root {
     --font-family: "Manrope", sans-serif;
 
-    --color-primary: #ffffff;
-    --color-secondary: #0e0038;
+    --primary-color: #ffffff;
+    --secondary-color: #0e0038;
     --bg-color: #070118;
     --font-color: #ffffff;
     --font-color-sky-blue:#7DC0FF;
 
     --bg-projet:#090724;
-    
+    --bg-titre-projet:#193E50;
+    --bd-titre-projet:#7CC8FF;
+    --competences-color:#465974;
+    --competences-color-text:#67B5BE;
 }

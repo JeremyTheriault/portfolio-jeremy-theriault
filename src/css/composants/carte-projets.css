@@ -1,18 +1,72 @@
+#projets h2{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.container-projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .projet {
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    color: var(--font-color);
     background-color: var(--bg-projet);
     border-radius: 10px;
-    margin: 30px;
+    margin: 30px 0;
+    padding: 30px;
+    border: 2px solid var(--primary-color );
+    box-shadow: 0px 0px 15px var(--primary-color);
 
     .flex span{
         color: var(--font-color-sky-blue);
+        font-size: 2vw;
+        font-family: var(--font-family);
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 2vw;
+        background-color: var(--bg-titre-projet);
+        border: 2px solid var(--bd-titre-projet);
+        border-radius:8px;
+        padding: 5px;
+    }
+
+    h4{
+        font-size: 3vw;
+        margin: 10px 0;
+        
+    }
+
+    p{
+        width: 50%;
+    }
+
+    .competences{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .competences span{
+        background-color: var(--competences-color);
+        border-radius:8px;
+        padding: 5px;
+        color: var(--competences-color-text);
+        width: 100px;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .flex {
     display: flex;
+    justify-content: space-between;
 }

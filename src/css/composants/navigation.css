@@ -4,7 +4,7 @@ header{
     align-items: center;
     padding: 3vw 1vw 0 1vw;
     background-color: var(--bg-color);
-    border-bottom: 4px solid var(--color-secondary);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 .name {
