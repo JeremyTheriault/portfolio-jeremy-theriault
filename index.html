@@ -1,46 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Jérémy</title>
 
-    <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="stylesheet" href="./src/css/composants/navigation.css">
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/composants/navigation.css" />
+    <link rel="stylesheet" href="./src/css/composants/carte-projets.css">
     <script src="./src/js/index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h3 class="name">Jérémy Thériault</h3>
-        <nav class="navigation">
-            <a href="#a-propos">
-                <li>À Propos</li>
-            </a>
-            <a href="#projets">
-                <li>Projets</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
-        </nav>
+      <h3 class="name">Jérémy Thériault</h3>
+      <nav class="navigation">
+        <a href="#a-propos">
+          <li>À Propos</li>
+        </a>
+        <a href="#projets">
+          <li>Projets</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </nav>
     </header>
     <main>
-
-        <div id="a-propos">
-
+      <section id="Hero">
+        <h1>Bienvenue sur mon portofolio</h1>
+        <p>
+          Je suis Jérémy Thériault, un développeur passionné par la création
+          d'expériences web innovantes et fonctionnelles. Explorez mes projets
+          et découvrez comment je peux contribuer à vos idées.
+        </p>
+        <div class="container-btn">
+          <button id="btn-hero" class="btn-contact">Contactez-moi</button>
+          <button id="btn-hero" class="btn-projets">Projets Récents</button>
         </div>
-        
-        <div id="projets">
+      </section>
+      <section id="a-propos">
+        <div class="bulles">
+          <img src="" alt="" />
+          <span></span>
+        </div>
+        <div class="bulles">
+          <img src="" alt="" />
+          <span></span>
+        </div>
+        <div class="bulles">
+          <img src="" alt="" />
+          <span></span>
+        </div>
+        <div class="bulles">
+          <img src="" alt="" />
+          <span></span>
+        </div>
+        <div class="bulles">
+          <img src="" alt="" />
+          <span></span>
+        </div>
+      </section>
 
+      <section id="projets">
+        <h2>Projets</h2>
+
+        <div class="container-projets">
+          <div class="projet">
+            <h3>Front-end</h3>
+            <span>2026</span>
+            <h4>Veyloria</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="competences">
+              <span>Tailwind</span>
+              <span>Gasp</span>
+            </div>
+          </div>
+          <div class="projet">
+            <div class="flex">
+                <h3>Video</h3>
+                <span>2025</span>
+            </div>
+            <h4>Le Roi Abandonné</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="competences">
+              <span>Audio</span>
+              <span>Images</span>
+            </div>
+          </div>
+          <div class="projet">
+            <div class="flex">
+                <h3>Animation 2D</h3>
+                <span>2025</span>
+            </div>
+            <h4>Singularité</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="competences">
+              <span>Design</span>
+              <span>Animation</span>
+            </div>
+          </div>
+          <div class="projet">
+            <div class="flex">
+                <h3>Jeux Video</h3>
+                <span>2025</span>
+            </div>
+            <h4>Again.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="competences">
+              <span>GDScipt</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Langages">
+        <h3>Langages</h3>
+        <div class="container-lgg">
+          <div class="html">
+            <img src="" alt="" />
+            <h4>HTML</h4>
+            <p>Bootstrap</p>
+            <p>Tailwind</p>
+            <span>87%</span>
+            <div class="bar-progression">
+              <div class="interieur-bar-progression"></div>
+            </div>
+          </div>
+          <div class="CSS">
+            <img src="" alt="" />
+            <h4>CSS/SCSS</h4>
+            <p>Responsive</p>
+            <p>Animation</p>
+            <span>80%</span>
+            <div class="bar-progression">
+              <div class="interieur-bar-progression"></div>
+            </div>
+          </div>
+          <div class="JS">
+            <img src="" alt="" />
+            <h4>JavaScript</h4>
+            <p>AnimeJS</p>
+            <p>ChartJS</p>
+            <p>GSAP</p>
+            <p>Zdog</p>
+            <p>ES6</p>
+            <span>67%</span>
+            <div class="bar-progression">
+              <div class="interieur-bar-progression"></div>
+            </div>
+          </div>
+          <div class="CPP">
+            <img src="" alt="" />
+            <h4>C++</h4>
+            <p>Arduino</p>
+            <span>8%</span>
+            <div class="bar-progression">
+              <div class="interieur-bar-progression"></div>
+            </div>
+          </div>
+          <div class="CMS">
+            <img src="" alt="" />
+            <h4>CMS</h4>
+            <p>Elementor</p>
+            <span>73%</span>
+            <div class="bar-progression">
+              <div class="interieur-bar-progression"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+
+        <div class="email">
+          <img src="" alt="" />
+          <span>contact@jtheriault.com</span>
+          <p class="copier">Copier</p>
         </div>
 
-        <div id="contact">
+        <div class="rejoindre">
+          <div class="linkedln">
+            <div>
+              <img src="" alt="" />
+            </div>
 
+            <h5></h5>
+          </div>
+          <div class="Github">
+            <div>
+              <img src="" alt="" />
+            </div>
+
+            <h5></h5>
+          </div>
+          <div class="Twitter">
+            <div>
+              <img src="" alt="" />
+            </div>
+
+            <h5></h5>
+          </div>
         </div>
-
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

@@ -1,0 +1,18 @@
+.projet {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--bg-projet);
+    border-radius: 10px;
+    margin: 30px;
+
+    .flex span{
+        color: var(--font-color-sky-blue);
+    }
+}
+
+.flex {
+    display: flex;
+}
