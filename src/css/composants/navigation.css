@@ -51,7 +51,7 @@ li:focus {
 
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
     header {
         display: flex;
         flex-direction: row-reverse;
@@ -93,8 +93,16 @@ li:focus {
         background-color: #fff;
     }
 
-    .burger.active span:nth-child(1) {
+    .burger:active span:nth-child(1) {
         -webkit-transform: translateY(9px) rotate(45deg);
         transform: translateY(9px) rotate(45deg);
     }
+    .burger:active span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger:active span:nth-child(3) {
+        -webkit-transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
 }
