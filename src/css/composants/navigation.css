@@ -1,5 +1,6 @@
 header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 3vw 1vw 5px 1vw;
@@ -42,4 +43,58 @@ li:focus {
     outline: 3px solid #2563eb;
     text-decoration: underline var(--primary-color) 3px;
     text-underline-offset: 5px;
+}
+
+.burger {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 460px) {
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2vw 1vw 5px 1vw;
+    }
+
+    .name {
+        width: 40%;
+        font-size: 3vw;
+        padding-left: 0;
+    }
+
+    nav {
+        width: 60%;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 1rem 5vw;
+        flex-direction: column;
+    }
+
+    li {
+        font-size: 3vw;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .burger span {
+        display: block;
+        width: 25px;
+        height: 4px;
+        margin: 5px auto;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
+
+    .burger.active span:nth-child(1) {
+        -webkit-transform: translateY(9px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
+    }
 }
