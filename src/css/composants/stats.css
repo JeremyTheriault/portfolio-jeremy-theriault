@@ -1,11 +1,12 @@
 #Langages {
   margin: 150px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   h3 {
     font-size: clamp(1.25vw, 3vw, 3vw);
   }
@@ -65,7 +66,7 @@
     div {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      gap: 1vw;
     }
   }
 
@@ -80,6 +81,7 @@
 
   .html {
     width: 75%;
+
     .interieur-bar-progression {
       height: 100%;
       width: 87%;
@@ -90,6 +92,7 @@
 
   .CSS {
     width: 75%;
+
     .interieur-bar-progression {
       height: 100%;
       width: 80%;
@@ -97,8 +100,10 @@
       transition: width 1s ease-in-out;
     }
   }
+
   .JS {
     width: 75%;
+
     .interieur-bar-progression {
       height: 100%;
       width: 67%;
@@ -106,8 +111,10 @@
       transition: width 1s ease-in-out;
     }
   }
+
   .CPP {
     width: 75%;
+
     .interieur-bar-progression {
       height: 100%;
       width: 8%;
@@ -115,13 +122,71 @@
       transition: width 1s ease-in-out;
     }
   }
+
   .CMS {
     width: 75%;
+
     .interieur-bar-progression {
       height: 100%;
       width: 73%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+    }
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  #Langages {
+    margin: 30px 0;
+
+    h3 {
+      font-size: clamp(3vw, 6vw, 6vw);
+    }
+
+    .container-lgg {
+      padding: 20px 20px;
+      width: 80%;
+    }
+
+    .bar-progression {
+      width: 100%;
+    }
+
+    .info{
+      gap: 0px;
+
+      div {
+        gap: 5px;
+      }
+
+      span {
+        font-size: clamp(2vw, 3vw, 3vw);
+      }
+    }
+
+    .info h4 {
+      font-size: clamp(1.25vw, 3vw, 3vw);
+    }
+
+    .info p {
+      font-size: clamp(1.25vw, 2vw, 2vw);
+    }
+
+    .html {
+      width: 95%;
+    }
+    .CSS {
+      width: 95%;
+    }
+    .JS {
+      width: 95%;
+    }
+    .CPP {
+      width: 95%;
+    }
+    .CMS {
+      width: 95%;
     }
   }
 }

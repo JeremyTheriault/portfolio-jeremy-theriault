@@ -73,4 +73,34 @@
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 460px) {
+    #projets h2 {
+        font-size: 6vw;
+    }
+
+    .projet {
+        width: 80%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .flex h3 {
+        font-size: 3vw;
+    }
+
+    .projet h4 {
+        font-size: 4vw;
+    }
+
+    .projet p{
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .projet .flex span {
+        font-size: 5vw;
+    }
 }
