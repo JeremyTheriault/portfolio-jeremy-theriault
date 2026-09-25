@@ -1,5 +1,11 @@
 #Langages {
-    width: 65%;
+  margin: 150px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   h3 {
     font-size: clamp(1.25vw, 3vw, 3vw);
   }
@@ -37,7 +43,7 @@
 
   .container-lgg {
     padding: 20px 20px;
-    width: 100%;
+    width: 60%;
     justify-content: center;
     align-items: center;
     display: flex;

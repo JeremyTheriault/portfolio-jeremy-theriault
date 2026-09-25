@@ -67,3 +67,65 @@
         color: var(--secondary-color);
     }
 }
+
+@media screen and (max-width: 460px)  {
+    #Hero {
+        padding: 0 0 0 0vw ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{ 
+            font-size: clamp(2.5vw, 8vw, 8vw);
+            width: 50%;
+            padding: 8vw 6vw 0;
+            line-height: 35px;
+            display: flex;
+            text-align: center;
+        }
+
+        p{
+            
+            font-size: clamp(1.25vw, 2vw, 2vw);
+            width: 40%;
+            padding: 2vw 6vw;
+        }
+
+        .container-btn {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        #btn-hero {
+            width: 100%;
+            padding: 5vw 5vw;
+            font-size: 3vw;
+            border-radius: 15px;
+        }
+
+        .btn-contact {
+            height: 100%;
+            background: var(--btn-blue);
+            color: var(--secondary-color);
+            border: none;
+            transition: all 0.3s ease;
+            font-size: 1.5vw;
+            font-weight: 800;
+            box-shadow: 0px 0px 15px var(--bd-titre-projet);
+        }
+
+        .btn-contact:hover {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            box-shadow: 0px 0px 10px var(--secondary-color);
+        }
+
+        .btn-projets {
+            height: 100%;
+            color: var(--primary-color);
+            background: none;
+            border: 2px solid var(--primary-color);
+            transition: all 0.3s ease;
+            font-size: 1.5vw;
+            font-weight: 800;
+            box-shadow: 0px 0px  
