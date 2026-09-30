@@ -35,6 +35,7 @@
         font-size: clamp(2vw, 2.5vw, 2.5vw);
         background-color: var(--bg-titre-projet);
         border: 2px solid var(--bd-titre-projet);
+        box-shadow: 0px 0px 15px var(--bd-titre-projet);
         border-radius:8px;
         padding: 5px 10px;
         text-align: center;
@@ -49,7 +50,7 @@
     p{
         width: 50%;
         padding: 2vw 0;
-        font-size: clamp(2.5vw, 1.5vw, 1.5vw);
+        font-size: clamp(1.5vw, 1.5vw, 1.5vw);
     }
 
     .competences{
@@ -103,4 +104,39 @@
     .projet .flex span {
         font-size: 5vw;
     }
+    .competences span{
+        width: 80px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projet {
+        width: 60%;
+        padding: 50px 80px;
+        margin: 30px 0;
+    }
+
+    .flex h3 {
+        font-size: 1.5vw;
+    }
+
+    .projet h4 {
+        font-size: 2vw;
+    }
+
+    .projet p{
+        width: 60%;
+        font-size: clamp(1vw, 1.5vw, 1.5vw);
+    }
+
+    .projet .flex span {
+        font-size: 1.5vw;
+    }
+    .competences span{
+        width: 100px;
+        font-size: 0.6vw;
+    }
+
+    
 }

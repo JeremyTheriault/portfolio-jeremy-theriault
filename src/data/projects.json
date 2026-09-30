@@ -5,7 +5,7 @@
         "year": 2026,
         "title": "Veyloria",
         "description": "Veyloria est un projet de jeu vidéo de type RPG développé par une équipe passionnée de développeurs et d'artistes. Le jeu se déroule dans un monde fantastique riche en histoire et en quêtes épiques. Les joueurs peuvent explorer des paysages variés, interagir avec des personnages uniques et prendre des décisions qui influencent le cours de l'histoire.",
-        "tech": ["Tailwind", "GSap", "Javascript", "HTML", "CSS"]
+        "tech": ["Tailwind", "GSAP", "Javascript", "HTML", "CSS"]
     },
     {
         "id": "Le Roi Abandonné",
@@ -13,7 +13,7 @@
         "year": 2025,
         "title": "Le Roi Abandonné",
         "description": "Description du projet 2.",
-        "tech": ["Reaper", "Davinci Resolve"]
+        "tech": ["Reaper", "Davinci"]
     },
     {
         "id": "Singularité",

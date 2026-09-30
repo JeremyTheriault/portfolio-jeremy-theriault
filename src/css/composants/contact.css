@@ -137,3 +137,44 @@ h5 {
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    #contact {
+        margin: 50px 0 0px 0;
+
+        h3 {
+            font-size: 4rem;
+        }
+        .email {
+            width: clamp(50%, 30%, 30%);
+            gap: 20px;
+            padding: 20px 20px;
+            font-size: 2rem;
+            height: 2vw;
+
+            p{
+                width: clamp(15%, 20%, 20%);
+                height: 2.5vw;
+                font-size: 2rem;
+            }
+        }
+
+        h5{
+            font-size: 1rem;
+        }
+
+        .rejoindre {
+        gap: 40px;
+
+        .bubble {
+            width: 6vw;
+            height: 6vw;
+
+            svg {
+                width: clamp(3vw, 3vw, 3vw);
+                height: 6vh;
+            }
+        }
+    }
+    }
+}

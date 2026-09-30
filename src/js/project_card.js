@@ -17,17 +17,17 @@ async function init() {
     project_grid.insertAdjacentHTML(
       "beforeend",
       `<div class="projet">
-                    <div class="flex">
-                        <h3> ${project.category} </h3>
-                        <span> ${project.year} </span>
-                    </div>
-                    <h4> ${project.title} </h4>
-                    <p> ${project.description} </p>
+          <div class="flex">
+          <h3> ${project.category} </h3>
+          <span> ${project.year} </span>
+        </div>
+        <h4> ${project.title} </h4>
+        <p> ${project.description} </p>
 
-                    <div class="competences">
-                        ${project.tech.map((tech) => `<span>${tech}</span>`).join("")}
-                    </div>
-        </div>`,
+        <div class="competences">
+          ${project.tech.map((tech) => `<span>${tech}</span>`).join("")}
+        </div>
+      </div>`,
     );
   });
 
