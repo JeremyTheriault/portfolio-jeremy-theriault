@@ -55,6 +55,10 @@
             gap: 20px;
         }
     }
+
+    .copier {
+        cursor: pointer;
+    }
 }
 
 .rejoindre {
