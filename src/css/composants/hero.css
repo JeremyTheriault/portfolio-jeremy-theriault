@@ -139,12 +139,12 @@
 @media screen and (min-width:1200px) {
     #Hero {
         padding: 0 0 0 5vw;
-        margin: 100px 0 200px 0;
+        margin: 0px 0 200px 0;
 
         h1 {
             font-size: 5rem; 
             width: 30%;
-            padding: 8vw 6vw 0;
+            padding: 4vw 6vw 0;
         }
 
         p {
