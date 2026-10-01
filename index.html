@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="./src/css/composants/hero.css">
     <link rel="stylesheet" href="./src/css/composants/stats.css">
     <link rel="stylesheet" href="./src/css/composants/contact.css">
-    <script src="./src/js/index.js"></script>
+    <script src="./src/js/index.js" defer></script>
     <script src="./src/js/project_card.js" defer></script>
+    <script src="./src/js/contact.js" defer></script>
 </head>
 
 <body>
@@ -170,7 +171,8 @@
                     </svg>
                     <span>contact@jtheriault.com</span>
                 </div>
-                <p class="copier">Copier</p>
+                <p class="copier" onclick="emailCopied()">Copier</p>
+                <button onclick="emailCopied()">Envoyer</button>
             </div>
             <div class="rejoindre">
                 <div class="linkedln">
