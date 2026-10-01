@@ -62,8 +62,8 @@ li:focus {
     .name {
         width: 40%;
         font-size: 3vw;
+        margin-right: 10px;
     }
-
 
     nav {
         width: 60%;
