@@ -87,6 +87,7 @@
       width: 87%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+      border-radius: 0 20px 20px 0px;
     }
   }
 
@@ -98,6 +99,7 @@
       width: 80%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+      border-radius: 0 20px 20px 0px;
     }
   }
 
@@ -109,6 +111,7 @@
       width: 67%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+      border-radius: 0 20px 20px 0px;
     }
   }
 
@@ -120,6 +123,7 @@
       width: 8%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+      border-radius: 0 20px 20px 0px;
     }
   }
 
@@ -131,6 +135,7 @@
       width: 73%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
+      border-radius: 0 20px 20px 0px;
     }
   }
 }

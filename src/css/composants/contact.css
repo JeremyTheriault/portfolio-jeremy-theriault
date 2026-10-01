@@ -59,6 +59,10 @@
     .copier {
         cursor: pointer;
     }
+
+    .bubble {
+        cursor: pointer;
+    }
 }
 
 .rejoindre {
