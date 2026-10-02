@@ -5,10 +5,11 @@
         "year": 2026,
         "title": "Veyloria",
         "description": "Conception et intégration front-end d'un site web immersif dédié à l'univers d'une planète fictive. En tant que développeur front-end, j'ai structuré l'interface en HTML5 et optimisé le design réactif à l'aide de Tailwind CSS et SCSS. Ce projet en équipe m'a permis de perfectionner la traduction visuelle de maquettes en interfaces dynamiques et fluides.",
-        "tech": ["Tailwind", "GSAP", "Javascript", "HTML", "CSS"]
+        "tech": ["Tailwind", "GSAP", "Javascript", "HTML", "CSS"],
+        "images": "./src/assets/images/veyloria.png"
     },
     {
-        "id": "Le Roi Abandonné",
+        "id": "Le-Roi-Abandonne",
         "category": "Vidéo",
         "year": 2025,
         "title": "Le Roi Abandonné",
@@ -16,7 +17,7 @@
         "tech": ["Reaper", "Davinci"]
     },
     {
-        "id": "Singularité",
+        "id": "singularite",
         "category": "Animation",
         "year": 2025,
         "title": "Singularité",

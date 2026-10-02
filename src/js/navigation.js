@@ -1,4 +1,3 @@
-const name = document.querySelector(".name");
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 

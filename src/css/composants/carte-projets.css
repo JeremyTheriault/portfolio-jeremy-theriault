@@ -140,3 +140,28 @@
 
     
 }
+
+.veyloria {
+    background: linear-gradient(90deg, var(--bg-projet) 60%, rgba(0, 0, 0, 0) 100%), url("/assets/images/veyloria.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.Le-Roi-Abandonne {
+    background: linear-gradient(90deg, var(--bg-projet) 60%, rgba(0, 0, 0, 0) 100%), url("/assets/images/roi_abandonne.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.singularite {
+    background: linear-gradient(90deg, var(--bg-projet) 60%, rgba(0, 0, 0, 0) 100%), url("/assets/images/singularite.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.Again {
+    background: linear-gradient(90deg, var(--bg-projet) 60%, rgba(0, 0, 0, 0) 100%), url("/assets/images/again.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}

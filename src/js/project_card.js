@@ -16,7 +16,7 @@ async function init() {
   projects.forEach((project) => {
     project_grid.insertAdjacentHTML(
       "beforeend",
-      `<div class="projet">
+      `<div class="projet ${project.id}">
           <div class="flex">
           <h3> ${project.category} </h3>
           <span> ${project.year} </span>
