@@ -1,0 +1,25 @@
+/* Fixe le canvas marin en arrière-plan */
+#ocean-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110vh;
+    z-index: -1;
+    pointer-events: none; /* Permet de cliquer sur tes boutons et liens à travers */
+}
+
+/* On s'assure que le body et le main ne masquent pas le canvas */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #031326; /* Couleur de secours sombre */
+    color: #e2f1ff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1; /* Reste au-dessus des bulles */
+}
