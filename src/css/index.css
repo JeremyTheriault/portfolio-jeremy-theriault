@@ -7,10 +7,19 @@
 }
 
 a {
+    color: var(--font-color);
     text-decoration: none;
+}
+
+.projet a:focus {
+    outline: 0px solid;
 }
 
 body {
     background: var(--bg-color);
     color: var(--font-color);
+}
+
+header {
+    position: sticky;
 }

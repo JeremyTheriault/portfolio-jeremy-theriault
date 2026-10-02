@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-header, main, footer {
+main, footer {
     position: relative;
     z-index: 1; /* Reste au-dessus des bulles */
 }

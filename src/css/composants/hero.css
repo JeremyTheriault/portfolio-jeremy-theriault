@@ -29,13 +29,15 @@
     }
 
     #btn-hero {
-        width: 100%;
+        width: 20%;
         padding: 1.5vw 1.5vw;
         font-size: 1.5vw;
         border-radius: 15px;
     }
 
     .btn-contact {
+        display: flex;
+        justify-content: center;
         height: 100%;
         background: var(--btn-blue);
         color: var(--secondary-color);
@@ -54,6 +56,8 @@
     }
 
     .btn-projets {
+        display: flex;
+        justify-content: center;
         height: 100%;
         color: var(--primary-color);
         background: none;

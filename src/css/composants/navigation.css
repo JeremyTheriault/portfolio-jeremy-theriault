@@ -40,7 +40,6 @@ li:hover {
 }
 
 li:focus {
-    outline: 3px solid #2563eb;
     text-decoration: underline var(--primary-color) 3px;
     text-underline-offset: 5px;
 }

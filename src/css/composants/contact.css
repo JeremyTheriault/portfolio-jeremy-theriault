@@ -1,188 +1,182 @@
 #contact {
-    margin: 50px 0 0px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 50px 0 0px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    h3{
-            font-size: clamp(5vw, 4vw, 6vw);
-            color: var(--primary-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-    .email {
-        font-size: clamp(3vw, 2vw, 2vw);
-        color: var(--primary-color);
-        background-color: var(--bg-contact);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: clamp(80%, 60%, 60%);
-        padding: 20px 20px;
-        border-radius: 15px;
-        border: 2px solid var(--primary-color);
-
-
-        svg {
-            width: 3vw;
-            height: 3vw;
-            path {
-                fill: var(--bd-bubble);
-            }
-        }
-
-        p {
-            font-size: clamp(2vw, 1.5vw, 1.5vw);
-            color: var(--primary-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--bg-titre-projet);
-            border: 2px solid var(--primary-color);
-            border-radius: 10px;
-            width: clamp(15%, 10%, 10%);
-            height: 2.5vw;
-        }
-
-        .email-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-    }
-
-    .copier {
-        cursor: pointer;
-    }
-
-    .bubble {
-        cursor: pointer;
-    }
-}
-
-.rejoindre {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:50px 0;
-    gap: 50px;
-}
-
-.bubble{
-    background-color: var(--bg-projet);
-    width:clamp(20vw, 10vw, 10vw);
-    height: clamp(20vw, 10vw, 10vw);
-    border-radius: 100%;
-    border: 2px solid var(--bd-bubble);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    svg {
-            width: clamp(12vw, 12vw, 12vw);
-            height: clamp(12vh, 12vh, 12vh);
-            path {
-                fill: var(--bd-bubble);
-            }
-        }
-}
-
-
-h5 {
-    font-size: clamp(2vw, 1.5vw, 1.5vw);
+  h3 {
+    font-size: clamp(5vw, 4vw, 6vw);
     color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .email {
+    font-size: clamp(3vw, 2vw, 2vw);
+    color: var(--primary-color);
+    background-color: var(--bg-contact);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(80%, 60%, 60%);
+    padding: 20px 20px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+
+    svg {
+      width: 3vw;
+      height: 3vw;
+      path {
+        fill: var(--bd-bubble);
+      }
+    }
+
+    p {
+      font-size: clamp(2vw, 1.5vw, 1.5vw);
+      color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bg-titre-projet);
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      width: clamp(15%, 10%, 10%);
+      height: 2.5vw;
+    }
+
+    .email-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .copier {
+    cursor: pointer;
+  }
+
+  .bubble {
+    cursor: pointer;
+  }
 }
 
+.rejoindre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  gap: 50px;
+}
 
+.bubble {
+  background-color: var(--bg-projet);
+  width: clamp(20vw, 10vw, 10vw);
+  height: clamp(20vw, 10vw, 10vw);
+  border-radius: 100%;
+  border: 2px solid var(--bd-bubble);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: clamp(12vw, 12vw, 12vw);
+    height: clamp(12vh, 12vh, 12vh);
+    path {
+      fill: var(--bd-bubble);
+    }
+  }
+}
+
+h5 {
+  font-size: clamp(2vw, 1.5vw, 1.5vw);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 500px) {
-    #contact {
+  #contact {
+    margin: 30px 0;
+    .email {
+      width: 80%;
+      gap: 20px;
+      padding: 20px 20px;
+      font-size: clamp(1.5vw, 3vw, 3vw);
 
-        margin: 30px 0;
-        .email {
-            width: 80%;
-            gap: 20px;
-            padding: 20px 20px;
-            font-size: clamp(1.5vw, 3vw, 3vw);
-
-            p{
-                width: 20vw;
-                height: 5vw;
-                font-size: clamp(1.5vw, 3vw, 3vw);
-            }
-        }
-
-
-        h5{
-            font-size: clamp(1.5vw, 3vw, 3vw);
-        }
-
-        h3{
-            font-size: clamp(3vw, 6vw, 6vw);
-        }
+      p {
+        width: 20vw;
+        height: 5vw;
+        font-size: clamp(1.5vw, 3vw, 3vw);
+      }
     }
 
-    .rejoindre {
-        gap: 20px;
-
-        .bubble {
-            width: 20vw;
-            height: 20vw;
-
-            svg {
-                width: 12vw;
-                height: 12vh;
-            }
-        }
+    h5 {
+      font-size: clamp(1.5vw, 3vw, 3vw);
     }
+
+    h3 {
+      font-size: clamp(3vw, 6vw, 6vw);
+    }
+  }
+
+  .rejoindre {
+    gap: 20px;
+
+    .bubble {
+      width: 20vw;
+      height: 20vw;
+
+      svg {
+        width: 12vw;
+        height: 12vh;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    #contact {
-        margin: 50px 0 0px 0;
+  #contact {
+    margin: 50px 0 0px 0;
 
-        h3 {
-            font-size: 4rem;
-        }
-        .email {
-            width: clamp(50%, 30%, 30%);
-            gap: 20px;
-            padding: 20px 20px;
-            font-size: 2rem;
-            height: 2vw;
-
-            p{
-                width: clamp(15%, 20%, 20%);
-                height: 2.5vw;
-                font-size: 2rem;
-            }
-        }
-
-        h5{
-            font-size: 1rem;
-        }
-
-        .rejoindre {
-        gap: 40px;
-
-        .bubble {
-            width: 6vw;
-            height: 6vw;
-
-            svg {
-                width: clamp(3vw, 3vw, 3vw);
-                height: 6vh;
-            }
-        }
+    h3 {
+      font-size: 4rem;
     }
+    .email {
+      width: clamp(50%, 30%, 30%);
+      gap: 20px;
+      padding: 20px 20px;
+      font-size: 2rem;
+      height: 2vw;
+
+      p {
+        width: clamp(15%, 20%, 20%);
+        height: 2.5vw;
+        font-size: 2rem;
+      }
     }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    .rejoindre {
+      gap: 40px;
+
+      .bubble {
+        width: 6vw;
+        height: 6vw;
+
+        svg {
+          width: clamp(3vw, 3vw, 3vw);
+          height: 6vh;
+        }
+      }
+    }
+  }
 }
