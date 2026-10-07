@@ -90,6 +90,7 @@
 
   .html {
     width: clamp(90%, 70%, 70%);
+    margin-bottom: 20px;
 
     .interieur-bar-progression {
       height: 100%;
@@ -105,7 +106,7 @@
 
   .CSS {
     width: clamp(90%, 70%, 70%);
-
+    margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
       width: 80%;
@@ -120,7 +121,7 @@
 
   .JS {
     width: clamp(90%, 70%, 70%);
-
+    margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
       width: 67%;
@@ -135,7 +136,7 @@
 
   .CPP {
     width: clamp(90%, 70%, 70%);
-
+    margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
       width: 8%;
@@ -151,7 +152,7 @@
 
   .CMS {
     width: clamp(90%, 70%, 70%);
-
+    margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
       width: 73%;
