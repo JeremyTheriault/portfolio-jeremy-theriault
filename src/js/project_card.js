@@ -18,17 +18,15 @@ async function init() {
       "beforeend",
       `
         <div class="projet ${project.id}">
-            <a href="">
-              <div class="flex">
-              <h3> ${project.category} </h3>
-              <span> ${project.year} </span>
-                        </div>
-                        <h4> ${project.title} </h4>
-                        <p> ${project.description} </p>
-                        <div class="competences">
-              ${project.tech.map((tech) => `<span>${tech}</span>`).join("")}
-                        </div>
-            </a>
+          <div class="flex">
+            <h3> ${project.category} </h3>
+            <span> ${project.year} </span>
+          </div>
+          <h4> ${project.title} </h4>
+          <p> ${project.description} </p>
+          <div class="competences">
+            ${project.tech.map((tech) => `<span>${tech}</span>`).join("")}
+          </div>
         </div>
       `,
     );
