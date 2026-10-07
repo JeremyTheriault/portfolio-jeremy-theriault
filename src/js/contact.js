@@ -1,4 +1,4 @@
-const email = "contact@jtheriault.dev";
+const email = "contact@j-theriault.ca";
 const emailElement = document.querySelector(".copier");
 
 

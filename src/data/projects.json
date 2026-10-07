@@ -6,7 +6,8 @@
         "title": "Veyloria",
         "description": "Conception et intégration front-end d'un site web immersif dédié à l'univers d'une planète fictive. En tant que développeur front-end, j'ai structuré l'interface en HTML5 et optimisé le design réactif à l'aide de Tailwind CSS et SCSS. Ce projet en équipe m'a permis de perfectionner la traduction visuelle de maquettes en interfaces dynamiques et fluides.",
         "tech": ["Tailwind", "GSAP", "Javascript", "HTML", "CSS"],
-        "images": "./src/assets/images/veyloria.png"
+        "images": "./src/assets/images/veyloria.png",
+        "alt": "Capture d'écran du site web Veyloria"
     },
     {
         "id": "Le-Roi-Abandonne",
@@ -14,7 +15,9 @@
         "year": 2025,
         "title": "Le Roi Abandonné",
         "description": "Court métrage explorant la thématique de la santé mentale à travers une analogie avec le jeu d'échecs. En tant que directeur audio et monteur sonore, j'ai assuré la prise de son en tournage ainsi que le montage et le mixage sous DaVinci Resolve. Le projet met en avant une narration visuelle appuyée par une ambiance sonore immersive et soignée.",
-        "tech": ["Reaper", "Davinci"]
+        "tech": ["Reaper", "Davinci"],
+        "images": "./src/assets/images/le-roi-abandonne.png",
+        "alt": "Capture d'écran du court métrage Le Roi Abandonné"
     },
     {
         "id": "singularite",
@@ -22,7 +25,8 @@
         "year": 2025,
         "title": "Singularité",
         "description": "Vidéo explicative vulgarisant les mécanismes d'un trou noir sous un format dynamique d'une minute. J'ai pris en charge la création des éléments vectoriels sur Illustrator ainsi que l'animation graphique sur After Effects. L'intégration de la voix hors champ et du design sonore vient renforcer la clarté pédagogique et le rythme visuel du projet.",
-        "tech": ["Illustrator", "After Effects"]
+        "tech": ["Illustrator", "After Effects"],
+        "alt": "Capture d'écran de l'animation Singularité"
     },
     {
         "id": "Again",
@@ -30,6 +34,7 @@
         "year": 2025,
         "title": "Again.",
         "description": "Jeu de plateforme exigeant de type rage game basé sur une boucle de réinitialisation complète à chaque échec. J'ai programmé la physique du joueur, les interactions et les collisions à l'aide du moteur Godot et de son langage de script. J'ai également intégré les effets sonores afin de maximiser l'immersion et la réactivité du gameplay.",
-        "tech": ["GdScript", "Godot"]
+        "tech": ["GdScript", "Godot"],
+        "alt": "Capture d'écran du jeu Again."
     }
 ]
