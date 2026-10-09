@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".veyloria", {
     scrollTrigger: {
-      trigger: ".projet.veyloria",
+      trigger: ".veyloria",
       start: "top 90%",
       toggleActions: "play none none none",
     },
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".Le-Roi-Abandonne", {
     scrollTrigger: {
-      trigger: ".projet.Le-Roi-Abandonne",
+      trigger: ".Le-Roi-Abandonne",
       start: "top 90%",
       toggleActions: "play none none none",
     },
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".singularite", {
     scrollTrigger: {
-      trigger: ".projet.singularite",
+      trigger: ".singularite",
       start: "top 90%",
       toggleActions: "play none none none",
     },
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".Again", {
     scrollTrigger: {
-      trigger: ".projet.Again",
+      trigger: ".Again",
       start: "top 90%",
       toggleActions: "play none none none",
     },
