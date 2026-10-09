@@ -86,6 +86,7 @@
         h1 {
             font-size: clamp(2.5vw, 8vw, 8vw);
             width: 50%;
+            height: 15vh;
             padding: 8vw 6vw 0;
             line-height: 35px;
             display: flex;
@@ -94,7 +95,7 @@
 
         p {
 
-            font-size: clamp(1.75vw, 2.75vw, 2.75vw);
+            font-size: clamp(1.75vw, 3.5vw, 3.5vw);
             width: 60%;
             padding: 2vw 6vw;
             text-align: center;
@@ -120,7 +121,6 @@
             color: var(--secondary-color);
             border: none;
             transition: all 0.3s ease;
-            font-size: 1.5vw;
             font-weight: 800;
             box-shadow: 0px 0px 15px var(--bd-titre-projet);
         }
@@ -137,7 +137,6 @@
             background: none;
             border: 2px solid var(--primary-color);
             transition: all 0.3s ease;
-            font-size: 3vw;
             font-weight: 800;
             box-shadow: 0px 0px;
         }
