@@ -1,5 +1,8 @@
 const hero = document.querySelector(".btn-hero");
 
-hero.addEventListener("click", () => {
-    window.scrollTo(0, 0);
+hero.addEventListener("keydown", (event) => {
+    if (event.key === 'Enter') {
+        event.key === ' ' && event.preventDefault();
+        window.scrollTo(0, 0);
+    }
 });

@@ -83,7 +83,7 @@ li:focus {
         width: 60%;
         opacity: 0;
         transition: all 0.4s ease;
-        display: none;
+
     }
 
     nav.open {
@@ -91,7 +91,7 @@ li:focus {
         background-color: var(--bg-color);
         width: 60%;
         transition: all 0.7s ease;
-        display: flex;
+
     }
 
     li {
