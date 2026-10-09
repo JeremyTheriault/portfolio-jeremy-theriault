@@ -94,8 +94,8 @@
 
         p {
 
-            font-size: clamp(1.25vw, 2vw, 2vw);
-            width: 40%;
+            font-size: clamp(1.75vw, 2.75vw, 2.75vw);
+            width: 60%;
             padding: 2vw 6vw;
             text-align: center;
         }
