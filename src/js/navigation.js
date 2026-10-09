@@ -8,3 +8,11 @@ burger.addEventListener("click", () => {
     nav.classList.toggle("open");
 });
 
+burger.addEventListener('keydown', () => {
+  // Vérifie si la touche pressée est "Enter" (ou " ")
+  if (event.key === 'Enter') {
+    event.key === ' ' && event.preventDefault(); // Évite que la page ne descende avec la barre d'espace
+    nav.classList.toggle("open");
+  }
+});
+
