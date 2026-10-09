@@ -94,7 +94,7 @@
 
     .interieur-bar-progression {
       height: 100%;
-      width: 87%;
+      width: 0%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
       border-radius: 0 20px 20px 0px;
@@ -109,7 +109,7 @@
     margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
-      width: 80%;
+      width: 0%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
       border-radius: 0 20px 20px 0px;
@@ -124,7 +124,7 @@
     margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
-      width: 67%;
+      width: 0%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
       border-radius: 0 20px 20px 0px;
@@ -139,7 +139,7 @@
     margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
-      width: 8%;
+      width: 0%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
       border-radius: 0 20px 20px 0px;
@@ -155,7 +155,7 @@
     margin-bottom: 20px;
     .interieur-bar-progression {
       height: 100%;
-      width: 73%;
+      width: 0%;
       background: var(--lgg-gradient);
       transition: width 1s ease-in-out;
       border-radius: 0 20px 20px 0px;
