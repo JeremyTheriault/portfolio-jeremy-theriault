@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#Hero",
       start: "top 60%",
       toggleActions: "play none none none",
-      markers: true, // Doit afficher des traits verts et rouges à l'écran
+       
     },
     x: -1200,
     rotation: -5,
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: ".projet.veyloria",
         start: "top 90%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       opacity: 0,
       x: -1200,
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: ".projet.Le-Roi-Abandonne",
         start: "top 90%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       opacity: 0,
       x: 1200,
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: ".projet.singularite",
         start: "top 90%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       opacity: 0,
       x: -1200,
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: ".projet.Again",
         start: "top 90%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       opacity: 0,
       x: 1200,
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: ".container-lgg",
         start: "top 60%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       y: 200,
       duration: 0.8,
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: "#contact",
         start: "top 60%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       y: 100,
       duration: 0.8,
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: "footer",
         start: "top 100%",
         toggleActions: "play none none none",
-        markers: true, // Doit afficher des traits verts et rouges à l'écran
+         
       },
       y: 100,
       duration: 0.8,
@@ -142,7 +142,7 @@ gsap.to(".counter-html", {
     trigger: ".container-lgg",
     start: "top 80%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   innerText: 87+"%", duration: 3,
   snap: {
@@ -154,7 +154,7 @@ gsap.to(".counter-css", {
     trigger: ".container-lgg",
     start: "top 80%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   innerText: 85+"%", duration: 3,
   snap: {
@@ -166,7 +166,7 @@ gsap.to(".counter-js", {
     trigger: ".container-lgg",
     start: "top 80%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   innerText: 67+"%", duration: 3,
   snap: {
@@ -178,7 +178,7 @@ gsap.to(".counter-cpp", {
     trigger: ".container-lgg",
     start: "top 80%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   innerText: 8+"%", duration: 3,
   snap: {
@@ -190,7 +190,7 @@ gsap.to(".counter-cms", {
     trigger: ".container-lgg",
     start: "top 80%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   innerText: 73+"%", duration: 3,
   snap: {
@@ -203,7 +203,7 @@ gsap.to(".bar-html", {
     trigger: ".container-lgg",
     start: "top 90%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   width: 87+"%", duration: 0.5,
 });
@@ -212,7 +212,7 @@ gsap.to(".bar-css", {
     trigger: ".container-lgg",
     start: "top 90%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   width: 85+"%", duration: 0.5,
 });
@@ -221,7 +221,7 @@ gsap.to(".bar-js", {
     trigger: ".container-lgg",
     start: "top 90%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   width: 67+"%", duration: 0.5,
 });
@@ -230,7 +230,7 @@ gsap.to(".bar-cpp", {
     trigger: ".container-lgg",
     start: "top 90%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   width: 8+"%", duration: 0.5,
 });
@@ -239,7 +239,7 @@ gsap.to(".bar-cms", {
     trigger: ".container-lgg",
     start: "top 90%",
     toggleActions: "play none none none",
-    markers: true, // Doit afficher des traits verts et rouges à l'écran
+     
   },
   width: 73+"%", duration: 0.5,
 });
