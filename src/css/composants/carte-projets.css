@@ -173,3 +173,16 @@
     background-position: right;
     background-repeat: no-repeat;
 }
+
+.veyloria:focus {
+    text-decoration: none;
+}
+.Le-Roi-Abandonne:focus {
+    text-decoration: none;
+}
+.singularite:focus {
+    text-decoration: none;
+}
+.Again:focus {
+    text-decoration: none;
+}

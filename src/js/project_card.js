@@ -17,7 +17,7 @@ async function init() {
     project_grid.insertAdjacentHTML(
       "beforeend",
       `
-        <div class="projet ${project.id}">
+        <div tabindex="0" class="projet ${project.id}">
           <div class="flex">
             <h3> ${project.category} </h3>
             <span> ${project.year} </span>
