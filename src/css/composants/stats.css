@@ -178,6 +178,11 @@
       font-size: clamp(3vw, 6vw, 6vw);
     }
 
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
     .container-lgg {
       padding: 20px 20px;
       width: 80%;
@@ -201,7 +206,7 @@
     }
 
     .info h4 {
-      font-size: clamp(1.25vw, 3vw, 3vw);
+      font-size: clamp(1.25vw, 3.75vw, 3.75vw);
     }
 
     .info p {
