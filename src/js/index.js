@@ -6,6 +6,10 @@ hero.addEventListener("keydown", (event) => {
     window.scrollTo(0, 0);
   }
 });
+hero.addEventListener("click", (event) => {
+    window.scrollTo(0, 0);
+  }
+);
 
 
 
