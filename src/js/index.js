@@ -245,11 +245,10 @@ gsap.from(splitProjets.chars, {
     end: "top 20%",
     toggleActions: "play reverse restart reverse",
   },
-  y: 50,
-  opacity: 0,
-  stagger: 0.03,
-  duration: 0.6,
-  ease: "back.out(1.7)"
+  scale: 0, y: 30,
+  rotation: () => gsap.utils.random(-20, 20),
+  stagger: { each: 0.04, from: "random" },
+  duration: 0.4, ease: "back.out(2)"
 });
 
 const splitLangages = new SplitText("#Langages h3", { type: "chars" });
@@ -261,11 +260,10 @@ gsap.from(splitLangages.chars, {
     end: "top 20%",
     toggleActions: "play reverse restart reverse",
   },
-  y: 50,
-  opacity: 0,
-  stagger: 0.03,
-  duration: 0.6,
-  ease: "back.out(1.7)"
+  scale: 0, y: 30,
+  rotation: () => gsap.utils.random(-20, 20),
+  stagger: { each: 0.04, from: "random" },
+  duration: 0.4, ease: "back.out(2)"
 });
 
 
