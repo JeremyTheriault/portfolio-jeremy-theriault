@@ -17,10 +17,8 @@ hero.addEventListener("click", (event) => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Enregistrer le plugin
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  // 2. Vérifier si l'élément existe bien
   console.log("Projets trouvés :", document.querySelectorAll(".projet").length);
 
 
@@ -28,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "#Hero",
       start: "top 60%",
-      toggleActions: "play none none none",
+      end: "top 0%",
+      toggleActions: "play reverse restart reverse",
     },
     x: -1200,
     rotation: -5,
@@ -40,8 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".veyloria", {
     scrollTrigger: {
       trigger: ".veyloria",
-      start: "top 90%",
-      toggleActions: "play none none none",
+      start: "top 80%",
+      end: "top 0%",
+      toggleActions: "play reverse restart reverse",
     },
     opacity: 0,
     x: -1200,
@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".Le-Roi-Abandonne", {
     scrollTrigger: {
       trigger: ".Le-Roi-Abandonne",
-      start: "top 90%",
-      toggleActions: "play none none none",
+      start: "top 80%",
+      end: "top 0%",
+      toggleActions: "play reverse restart reverse",
     },
     opacity: 0,
     x: 1200,
@@ -68,8 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".singularite", {
     scrollTrigger: {
       trigger: ".singularite",
-      start: "top 90%",
-      toggleActions: "play none none none",
+      start: "top 80%",
+      end: "top 0%",
+      toggleActions: "play reverse restart reverse",
     },
     opacity: 0,
     x: -1200,
@@ -82,8 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".Again", {
     scrollTrigger: {
       trigger: ".Again",
-      start: "top 90%",
-      toggleActions: "play none none none",
+      start: "top 80%",
+      end: "top 0%",
+      toggleActions: "play reverse restart reverse",
     },
     opacity: 0,
     x: 1200,
@@ -97,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".container-lgg",
       start: "top 60%",
-      toggleActions: "play none none none",
+      toggleActions: "play none none reverse",
     },
     y: 200,
     duration: 0.8,
@@ -110,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "#contact",
       start: "top 60%",
-      toggleActions: "play none none none",
+      toggleActions: "play reverse restart reverse",
     },
     y: 100,
     duration: 0.8,
@@ -123,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "footer",
       start: "top 100%",
+      end: "top 0%",
       toggleActions: "play none none none",
     },
     y: 100,
@@ -229,5 +233,40 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     width: 73 + "%", duration: 0.5,
   });
+
+
+
+const splitProjets = new SplitText("#projets h2", { type: "chars" });
+
+gsap.from(splitProjets.chars, {
+  scrollTrigger: {
+    trigger: "#projets h2",
+    start: "top 80%",
+    end: "top 20%",
+    toggleActions: "play reverse restart reverse",
+  },
+  y: 50,
+  opacity: 0,
+  stagger: 0.03,
+  duration: 0.6,
+  ease: "back.out(1.7)"
+});
+
+const splitLangages = new SplitText("#Langages h3", { type: "chars" });
+
+gsap.from(splitLangages.chars, {
+  scrollTrigger: {
+    trigger: "#Langages h3",
+    start: "top 80%",
+    end: "top 20%",
+    toggleActions: "play reverse restart reverse",
+  },
+  y: 50,
+  opacity: 0,
+  stagger: 0.03,
+  duration: 0.6,
+  ease: "back.out(1.7)"
+});
+
 
 });
