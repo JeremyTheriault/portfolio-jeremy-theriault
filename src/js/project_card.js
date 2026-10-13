@@ -31,10 +31,6 @@ async function init() {
       `,
     );
   });
-
-  function createProjectCard(project) {
-    return;
-  }
 }
 
 init();
