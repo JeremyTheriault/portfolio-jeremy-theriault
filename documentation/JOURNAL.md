@@ -19,3 +19,8 @@ J’ai créé une première version de ce que je voudrais à la base, puis j’a
 - Prompt : comment mettre un :focus sans a
 - Outil : Gemini
 - Résultat : Si vous voulez qu'une <div> ou un paragraphe réagisse au :focus, vous devez obligatoirement lui ajouter tabindex="0" pour qu'un utilisateur puisse l'atteindre (au clavier ou au clic)
+
+- Date : 13 Octobre 2026
+- Prompt : j'ai quelques problemes avec mes animations lorsque les pages sont plus petite
+- Outil : Gemini
+- Résultat : La solution standard avec GSAP consiste à utiliser gsap.matchMedia(). Cela permet d'adapter ou d'adoucir les animations spécifiquement pour le mobile, tout en conservant les effets complets sur grand écran.
