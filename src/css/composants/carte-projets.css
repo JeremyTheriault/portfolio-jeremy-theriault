@@ -16,6 +16,10 @@
 }
 
 .projet {
+    cursor: pointer;
+}
+
+.projet {
     width: clamp(80%, 60%, 60%);
     display: flex;
     flex-direction: column;
