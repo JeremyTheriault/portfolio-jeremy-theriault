@@ -45,6 +45,7 @@ function setupModal() {
   const modalDesc = modal.querySelector("#modal-desc");
   const modalTech = modal.querySelector("#modal-tech");
   const modalLink = modal.querySelector("#modal-link");
+  const modalContext = modal.querySelector("#modal-context");
 
   // Fonction pour afficher les détails du projet
   const openProjectDetails = (card) => {
@@ -57,6 +58,7 @@ function setupModal() {
     modalTitle.textContent = project.title;
     modalCategory.textContent = project.category;
     modalYear.textContent = project.year;
+    modalContext.textContent = project.context;
     modalDesc.textContent = project.description_longue;
 
     // Image (si définie dans le JSON)

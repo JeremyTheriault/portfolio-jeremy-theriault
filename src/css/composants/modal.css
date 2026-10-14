@@ -95,6 +95,18 @@
   font-weight: 600;
   color: var(--bd-bubble);
 }
+.modal-context {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--bd-bubble);
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 6px;
+}
 
 .modal-content h2 {
   font-size: 1.85rem;
