@@ -1,19 +1,15 @@
 # Gestion des données
 
-Fichier JSON local
+Fichier structuré local projects.json combiné à l'API native fetch() en JavaScript asynchrone (async/await).
 
 # Animation 
 
-Bulle (Scroll)
-
-Pourcentage(CSS)
-
-Texte coloré avec un texte gradient (CSS)
+GSAP assisté de ses extensions ScrollTrigger et SplitText, complété par des transitions CSS pures pour les micro-interactions.
 
 # Navigation 
 
-Mutlipages
+Format One-Pager enrichi d'un système de fenêtres modales dynamiques
 
 # Hébergement 
 
-Github-pages
+GitHub Pages
