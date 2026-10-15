@@ -307,6 +307,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "back.out(2)",
     });
   }
+
+  document.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = "var(--header-color)";
+    } else {
+      header.style.backgroundColor = "transparent";
+    }
+  });
 });
 
 // Recalcul une fois les images et styles totalement chargés
