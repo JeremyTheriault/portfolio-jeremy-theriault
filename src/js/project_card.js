@@ -29,7 +29,7 @@ async function init() {
       `,
     );
   });
-
+  
   setupModal();
 }
 
@@ -72,7 +72,9 @@ function setupModal() {
 
     // Compétences / Technologies
     if (project.tech && project.tech.length > 0) {
-      modalTech.innerHTML = project.tech.map((t) => `<span>${t}</span>`).join("");
+      modalTech.innerHTML = project.tech
+        .map((t) => `<span>${t}</span>`)
+        .join("");
       modalTech.style.display = "flex";
     } else {
       modalTech.innerHTML = "";
@@ -101,12 +103,27 @@ function setupModal() {
   });
 
   // 2. Accessibilité au clavier : Touche Entrée sur une carte ciblée
+  // Accessibilité clavier : Touche Entrée ou Espace sur une carte ciblée
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      const card = document.activeElement.closest(".projet");
-      if (card) {
-        openProjectDetails(card);
-      }
+    // Accepte Entrée (classique ou pavé numérique) ainsi qu'Espace
+    const isEnter =
+      event.key === "Enter" ||
+      event.code === "Enter" ||
+      event.code === "NumpadEnter";
+    const isSpace = event.key === " " || event.code === "Space";
+
+    if (!isEnter && !isSpace) return;
+
+    // Si la modale est déjà ouverte, on ne relance pas
+    if (modal.open) return;
+
+    // On recherche la carte ciblée depuis la cible active ou l'événement
+    const targetElement = event.target || document.activeElement;
+    const card = targetElement ? targetElement.closest(".projet") : null;
+
+    if (card) {
+      event.preventDefault(); // Bloque le comportement par défaut (scroll ou soumission)
+      openProjectDetails(card);
     }
   });
 

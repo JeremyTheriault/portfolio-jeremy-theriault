@@ -29,3 +29,8 @@ J’ai créé une première version de ce que je voudrais à la base, puis j’a
 - Prompt : je veux faire en sorte de prendre les données de mon json actuel et de l'injecter dans mon modal. Les informations du projets cliqués sont affichés
 - Outil : Gemini Pro
 - Résultat : Pour injecter directement l'objet JavaScript correspondant au projet cliqué sans tout dupliquer dans des attributs HTML, la méthode la plus propre consiste à conserver le tableau projects en mémoire et à associer chaque carte par un identifiant ou son index (data-id ou data-index).
+
+- Date : 15 Octobre 2026
+- Prompt : Comment faire pour désactiver les animations lorsque une personne coche l'option windows
+- Outil : Gemini Pro
+- Résultat : Pour respecter le choix d'un utilisateur qui a désactivé les animations dans les paramètres d'accessibilité de Windows, on utilise la règle CSS média query prefers-reduced-motion.

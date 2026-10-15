@@ -1,38 +1,74 @@
-// Gestion du bouton hero
+// Détection du paramètre d'accessibilité Windows / Système
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// ==========================================
+// GESTION DU BOUTON HERO
+// ==========================================
 const hero = document.querySelector(".btn-hero");
 
 if (hero) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth"
+    });
+  };
+
   hero.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      scrollToTop();
     }
   });
 
   hero.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   });
 }
 
+// ==========================================
+// INITIALISATION DES ANIMATIONS
+// ==========================================
 document.addEventListener("DOMContentLoaded", () => {
+  // Si l'utilisateur a demandé de réduire les mouvements, on applique l'état final directement
+  if (prefersReducedMotion) {
+    // Affiche directement les barres de progression et les pourcentages
+    const stats = [
+      { selBar: ".bar-html", selCount: ".counter-html", val: "87%" },
+      { selBar: ".bar-css", selCount: ".counter-css", val: "85%" },
+      { selBar: ".bar-js", selCount: ".counter-js", val: "67%" },
+      { selBar: ".bar-cpp", selCount: ".counter-cpp", val: "8%" },
+      { selBar: ".bar-cms", selCount: ".counter-cms", val: "73%" }
+    ];
+
+    stats.forEach(item => {
+      const bar = document.querySelector(item.selBar);
+      const counter = document.querySelector(item.selCount);
+      if (bar) bar.style.width = item.val;
+      if (counter) counter.innerText = item.val;
+    });
+
+    // Gestion du fond de navigation au scroll
+    document.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (header) {
+        header.style.backgroundColor = window.scrollY > 50 ? "var(--header-color)" : "transparent";
+      }
+    });
+
+    return; // Arrête l'exécution ici : aucune animation GSAP n'est créée
+  }
+
+  // --- Code GSAP standard (quand les animations sont autorisées) ---
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  // Évite les bugs de recalcul quand la barre d'adresse mobile change de taille
   ScrollTrigger.config({
     ignoreMobileResize: true,
   });
 
-  console.log("Projets trouvés :", document.querySelectorAll(".projet").length);
-
   const mm = gsap.matchMedia();
 
-  // ==========================================
-  // VERSION DESKTOP (> 768px)
-  // Animations amples d'origine
-  // ==========================================
   setTimeout(() => {
-    console.log("Projets trouvés après 1s :", document.querySelectorAll(".projet").length);
-
     // Version Grand Écran (> 768px)
     mm.add("(min-width: 769px)", () => {
       gsap.from(".veyloria", {
@@ -112,7 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Indispensable : force GSAP à recalculer les déclencheurs de scroll
     ScrollTrigger.refresh();
   }, 1000);
 
@@ -156,122 +191,50 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "back.out(1.4)",
   });
 
-  gsap.to(".counter-html", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    innerText: 87 + "%",
-    duration: 3,
-    snap: {
-    innerText: 1,
-    },
+  // Compteurs
+  const counters = [
+    { sel: ".counter-html", val: 87 },
+    { sel: ".counter-css", val: 85 },
+    { sel: ".counter-js", val: 67 },
+    { sel: ".counter-cpp", val: 8 },
+    { sel: ".counter-cms", val: 73 }
+  ];
+
+  counters.forEach(c => {
+    gsap.to(c.sel, {
+      scrollTrigger: {
+        trigger: ".container-lgg",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+      innerText: c.val + "%",
+      duration: 3,
+      snap: { innerText: 1 },
+    });
   });
 
-  gsap.to(".counter-css", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    innerText: 85 + "%",
-    duration: 3,
-    snap: {
-    innerText: 1,
-    },
+  // Barres de progression
+  const bars = [
+    { sel: ".bar-html", val: 87 },
+    { sel: ".bar-css", val: 85 },
+    { sel: ".bar-js", val: 67 },
+    { sel: ".bar-cpp", val: 8 },
+    { sel: ".bar-cms", val: 73 }
+  ];
+
+  bars.forEach(b => {
+    gsap.to(b.sel, {
+      scrollTrigger: {
+        trigger: ".container-lgg",
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+      width: b.val + "%",
+      duration: 0.5,
+    });
   });
 
-  gsap.to(".counter-js", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    innerText: 67 + "%",
-    duration: 3,
-    snap: {
-    innerText: 1,
-    },
-  });
-
-  gsap.to(".counter-cpp", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    innerText: 8 + "%",
-    duration: 3,
-    snap: {
-    innerText: 1,
-    },
-  });
-
-  gsap.to(".counter-cms", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-    innerText: 73 + "%",
-    duration: 3,
-    snap: {
-    innerText: 1,
-    },
-  });
-
-  gsap.to(".bar-html", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 90%",
-      toggleActions: "play none none none",
-    },
-    width: 87 + "%",
-    duration: 0.5,
-  });
-
-  gsap.to(".bar-css", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 90%",
-      toggleActions: "play none none none",
-    },
-    width: 85 + "%",
-    duration: 0.5,
-  });
-
-  gsap.to(".bar-js", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 90%",
-      toggleActions: "play none none none",
-    },
-    width: 67 + "%",
-    duration: 0.5,
-  });
-
-  gsap.to(".bar-cpp", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 90%",
-      toggleActions: "play none none none",
-    },
-    width: 8 + "%",
-    duration: 0.5,
-  });
-
-  gsap.to(".bar-cms", {
-    scrollTrigger: {
-      trigger: ".container-lgg",
-      start: "top 90%",
-      toggleActions: "play none none none",
-    },
-    width: 73 + "%",
-    duration: 0.5,
-  });
-
-  // Animations SplitText
+  // SplitText
   if (document.querySelector("#projets h2")) {
     const splitProjets = new SplitText("#projets h2", { type: "chars" });
     gsap.from(splitProjets.chars, {
@@ -310,15 +273,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("scroll", () => {
     const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-      header.style.backgroundColor = "var(--header-color)";
-    } else {
-      header.style.backgroundColor = "transparent";
+    if (header) {
+      header.style.backgroundColor = window.scrollY > 50 ? "var(--header-color)" : "transparent";
     }
   });
 });
 
-// Recalcul une fois les images et styles totalement chargés
 window.addEventListener("load", () => {
-  ScrollTrigger.refresh();
+  if (!prefersReducedMotion && typeof ScrollTrigger !== "undefined") {
+    ScrollTrigger.refresh();
+  }
 });
