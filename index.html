@@ -92,47 +92,60 @@
       </section>
 
       <dialog id="project-modal" class="modal">
-        <div class="modal-card">
-          <button
-            type="button"
-            class="modal-close"
-            aria-label="Fermer la modale"
-          >
-            &times;
-          </button>
+  <div class="modal-card">
+    <button
+      type="button"
+      class="modal-close"
+      aria-label="Fermer la modale"
+    >
+      &times;
+    </button>
 
-          <div class="modal-media">
-            <img id="modal-img" src="" alt="Aperçu du projet" />
-          </div>
+    <div class="modal-media">
+      <img id="modal-img" src="" alt="Aperçu du projet" />
+    </div>
 
-          <div class="modal-content">
-            <div class="flex">
-              <span id="modal-category" class="modal-badge"></span>
-              <div class="modal-info">
-                <span id="modal-year" class="modal-year"></span>
-                <span id="modal-context" class="modal-context"></span>
-              </div>
-            </div>
-
-            <h2 id="modal-title"></h2>
-            <p id="modal-desc"></p>
-
-            <div id="modal-tech" class="competences"></div>
-
-            <div class="modal-actions">
-              <a
-                id="modal-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn-primary"
-              >
-                Visiter le projet
-              </a>
-            </div>
-          </div>
+    <div class="modal-content">
+      <div class="flex">
+        <span id="modal-category" class="modal-badge"></span>
+        <div class="modal-info">
+          <span id="modal-year" class="modal-year"></span>
+          <span id="modal-context" class="modal-context"></span>
         </div>
-      </dialog>
+      </div>
+
+      <h2 id="modal-title"></h2>
+
+      <!-- Infos d'équipe et rôles -->
+      <div id="modal-meta" class="modal-meta" style="margin: 0.5rem 0; font-size: 0.95rem;">
+        <p id="modal-role"></p>
+        <p id="modal-team"></p>
+      </div>
+
+      <p id="modal-desc"></p>
+
+      <!-- Section Processus de création -->
+      <div id="modal-process-container" class="modal-process-section">
+        <h3>Processus de création</h3>
+        <ul id="modal-process-list" class="modal-process-list"></ul>
+      </div>
+
+      <div id="modal-tech" class="competences"></div>
+
+      <div class="modal-actions">
+        <a
+          id="modal-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+          Visiter le projet
+        </a>
+      </div>
+    </div>
+  </div>
+</dialog>
 
       <section id="Langages">
         <h3>Langages</h3>

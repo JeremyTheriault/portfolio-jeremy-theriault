@@ -23,7 +23,25 @@
     "tech": ["Reaper", "Davinci"],
     "images": "../../../assets/images/roi_abandonne.png",
     "alt": "Capture d'écran du court métrage Le Roi Abandonné",
-    "link": "./assets/videos/le-roi-abandonne.mp4"
+    "link": "./assets/videos/le-roi-abandonne.mp4",
+    "process": [
+    {
+      "step": "Préproduction & Conception sonore",
+      "detail": "Élaboration de la charte sonore pour traduire l’isolement et la tension psychologique. Planification des sons diégétiques et ambiances."
+    },
+    {
+      "step": "Tournage & Prise de son (Foley)",
+      "detail": "Captation des dialogues et enregistrement dédié des bruitages (pièces d'échecs s'entrechoquant, respirations lourdes)."
+    },
+    {
+      "step": "Montage & Sound Design (DaVinci Resolve)",
+      "detail": "Dérushage, nettoyage des bruits parasites et création de textures sonores matérialisant la détresse mentale (filtres, réverbes)."
+    },
+    {
+      "step": "Mixage & Spatialisation",
+      "detail": "Équilibrage dynamique entre silences, musique et impacts sur Fairlight pour garantir une immersion optimale."
+    }
+  ]
   },
   {
     "id": "singularite",

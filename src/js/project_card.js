@@ -47,6 +47,12 @@ function setupModal() {
   const modalLink = modal.querySelector("#modal-link");
   const modalContext = modal.querySelector("#modal-context");
 
+  // Nouveaux éléments
+  const modalRole = modal.querySelector("#modal-role");
+  const modalTeam = modal.querySelector("#modal-team");
+  const modalProcessContainer = modal.querySelector("#modal-process-container");
+  const modalProcessList = modal.querySelector("#modal-process-list");
+
   // Fonction pour afficher les détails du projet
   const openProjectDetails = (card) => {
     const projectId = card.dataset.id;
@@ -54,14 +60,41 @@ function setupModal() {
 
     if (!project) return;
 
-    // Remplissage des données
-    modalTitle.textContent = project.title;
-    modalCategory.textContent = project.category;
-    modalYear.textContent = project.year;
-    modalContext.textContent = project.context;
-    modalDesc.textContent = project.description_longue;
+    // Remplissage des données de base
+    modalTitle.textContent = project.title || "";
+    modalCategory.textContent = project.category || "";
+    modalYear.textContent = project.year || "";
+    modalContext.textContent = project.context || "";
+    modalDesc.textContent = project.description_longue || project.description || "";
 
-    // Image (si définie dans le JSON)
+    // Rôle et Équipe
+    if (modalRole) {
+      modalRole.innerHTML = project.role ? `<strong>Rôle :</strong> ${project.role}` : "";
+    }
+    if (modalTeam) {
+      modalTeam.innerHTML = project.team ? `<strong>Équipe :</strong> ${project.team}` : "";
+    }
+
+    // Processus de création
+    if (modalProcessContainer && modalProcessList) {
+      if (project.process && project.process.length > 0) {
+        modalProcessList.innerHTML = project.process
+          .map(
+            (step) => `
+            <li>
+              <strong>${step.step} :</strong> ${step.detail}
+            </li>
+          `
+          )
+          .join("");
+        modalProcessContainer.style.display = "block";
+      } else {
+        modalProcessList.innerHTML = "";
+        modalProcessContainer.style.display = "none";
+      }
+    }
+
+    // Image
     if (project.image) {
       modalImg.src = project.image;
       modalImg.alt = project.title;
@@ -89,12 +122,11 @@ function setupModal() {
       modalLink.style.display = "none";
     }
 
-    // Affichage de la modale
     modal.showModal();
     document.body.style.overflow = "hidden";
   };
 
-  // 1. Clic sur la carte
+  // Clic sur la carte
   document.addEventListener("click", (event) => {
     const card = event.target.closest(".projet");
     if (card) {
@@ -102,10 +134,8 @@ function setupModal() {
     }
   });
 
-  // 2. Accessibilité au clavier : Touche Entrée sur une carte ciblée
-  // Accessibilité clavier : Touche Entrée ou Espace sur une carte ciblée
+  // Accessibilité clavier (Entrée / Espace)
   document.addEventListener("keydown", (event) => {
-    // Accepte Entrée (classique ou pavé numérique) ainsi qu'Espace
     const isEnter =
       event.key === "Enter" ||
       event.code === "Enter" ||
@@ -113,21 +143,18 @@ function setupModal() {
     const isSpace = event.key === " " || event.code === "Space";
 
     if (!isEnter && !isSpace) return;
-
-    // Si la modale est déjà ouverte, on ne relance pas
     if (modal.open) return;
 
-    // On recherche la carte ciblée depuis la cible active ou l'événement
     const targetElement = event.target || document.activeElement;
     const card = targetElement ? targetElement.closest(".projet") : null;
 
     if (card) {
-      event.preventDefault(); // Bloque le comportement par défaut (scroll ou soumission)
+      event.preventDefault();
       openProjectDetails(card);
     }
   });
 
-  // 3. Fermeture par la croix
+  // Fermeture par la croix
   if (closeBtn) {
     closeBtn.addEventListener("click", () => {
       modal.close();
@@ -135,7 +162,7 @@ function setupModal() {
     });
   }
 
-  // 4. Fermeture au clic à l'extérieur (sur le backdrop)
+  // Fermeture au clic à l'extérieur
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.close();
@@ -143,7 +170,7 @@ function setupModal() {
     }
   });
 
-  // 5. Rétablissement du défilement lors d'une fermeture avec Échap
+  // Fermeture avec Échap
   modal.addEventListener("cancel", () => {
     document.body.style.overflow = "";
   });

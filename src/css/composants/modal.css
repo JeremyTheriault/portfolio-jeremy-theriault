@@ -7,7 +7,7 @@
   width: 90%;
   margin: auto;
   border-radius: 16px;
-  overflow: hidden;
+
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
   font-family: var(--font-family);
 }
@@ -26,7 +26,7 @@
   color: var(--font-color);
   border: 1px solid var(--primary-color);
   border-radius: 16px;
-  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -140,6 +140,53 @@
 #modal-desc::-webkit-scrollbar-thumb {
   background: var(--competences-color);
   border-radius: 4px;
+}
+
+.modal-process-section {
+  margin: 1.5rem 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-process-section h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.modal-process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.modal-process-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.modal-process-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  box-shadow: 0 0 6px #38bdf8;
+}
+
+.modal-process-list strong {
+  color: #f8fafc;
+  display: inline;
 }
 
 .modal-content .competences {
