@@ -9,7 +9,8 @@
     "description_longue": "Veyloria est une plateforme web narrative et interactive dédiée à l'exploration d'un monde imaginaire. Dans le cadre de ce projet mené en collaboration, j'ai assuré le rôle de développeur front-end avec pour mission de traduire fidèlement les maquettes graphiques en une expérience web réactive et rythmée.\n\nSur le plan technique, l'architecture HTML5 sémantique a été complétée par un système de styles hybride combinant Tailwind CSS pour l'agencement rapide des composants et SCSS pour des règles sur mesure. J'ai orchestré les transitions et les apparitions d'éléments au défilement à l'aide de la bibliothèque GSAP (ScrollTrigger), veillant à maintenir une fluidité constante à 60 images par seconde. Ce projet a consolidé mes compétences en intégration responsive, en gestion d'animations complexes et en travail d'équipe versionné.",
     "tech": ["Tailwind", "GSAP", "Javascript", "HTML", "CSS"],
     "images": "../../../assets/images/veyloria.png",
-    "alt": "Capture d'écran du site web Veyloria"
+    "alt": "Capture d'écran du site web Veyloria",
+    "link": "https://github.com/MrPoutineQc/veyloria"
   },
   {
     "id": "Le-Roi-Abandonne",
@@ -21,7 +22,8 @@
     "description_longue": "Le Roi Abandonné est un court métrage narratif illustrant le tiraillement psychologique et l'isolement liés à la santé mentale, métaphorisés par une partie d'échecs sous tension. J'y ai occupé les postes de preneur de son lors du tournage, puis de directeur audio et monteur sonore lors de la postproduction.\n\nLe travail audio s'est articulé autour d'une chaîne de production complète : nettoyage des prises de voix, création d'effets sonores personnalisés (foley) et composition d'ambiances texturales sous REAPER, avant l'exportation et le mixage multicanal final synchronisé à l'image sous DaVinci Resolve Fairlight. L'accent a été mis sur les silences pesants, la résonance des pièces et les montées en tension auditive afin d'immerger le spectateur au cœur de la détresse du protagoniste.",
     "tech": ["Reaper", "Davinci"],
     "images": "../../../assets/images/roi_abandonne.png",
-    "alt": "Capture d'écran du court métrage Le Roi Abandonné"
+    "alt": "Capture d'écran du court métrage Le Roi Abandonné",
+    "link": "./assets/videos/le-roi-abandonne.mp4"
   },
   {
     "id": "singularite",
@@ -33,7 +35,8 @@
     "description_longue": "Singularité est une animation graphique didactique de vulgarisation scientifique condensant la physique des trous noirs en un format incisif de 60 secondes. L'objectif était de rendre accessibles des principes astrophysiques abstraits (l'horizon des événements, la courbure spatio-temporelle et la déformation lumineuse) grâce à une direction artistique géométrique et épurée.\n\nEn tant qu'animateur et graphiste, j'ai d'abord conçu l'ensemble des planches d'illustration vectorielle sous Adobe Illustrator avant de les importer sous After Effects pour le motion design. J'ai animé les trajectoires, courbes d'accélération et déformations cinétiques en accord avec le tempo d'une voix hors champ et d'une conception sonore spatiale, garantissant une cohérence millimétrée entre narration verbale et impact visuel.",
     "tech": ["Illustrator", "After Effects"],
     "images": "../../../assets/images/singularite.png",
-    "alt": "Capture d'écran de l'animation Singularité"
+    "alt": "Capture d'écran de l'animation Singularité",
+    "link": "./assets/videos/singularite.mp4"
   },
   {
     "id": "Again",
@@ -45,6 +48,7 @@
     "description_longue": "Again. est un jeu de plateforme 2D ultra-précis inspiré des classiques du genre « rage game », où chaque obstacle exige une exactitude sans compromis sous peine de devoir recommencer le niveau depuis le tout début. La mécanique repose sur l'apprentissage par l'échec et la répétition rythmée.\n\nDéveloppé sous le moteur Godot avec GDScript, j'ai conçu et ajusté l'ensemble de la machine à états finis du joueur : calcul d'inertie sur mesure, gestion fine du saut (coyote time, jump buffering), ainsi que les zones de déclenchement (Area2D) des pièges et des réinitialisations instantanées. J'ai également configuré le bus audio pour offrir des retours sonores nets à chaque saut, mort ou contact, assurant une jouabilité nerveuse, lisible et gratifiante.",
     "tech": ["GdScript", "Godot"],
     "images": "../../../assets/images/again.png",
-    "alt": "Capture d'écran du jeu Again."
+    "alt": "Capture d'écran du jeu Again.",
+    "link": "https://github.com/MrPoutineQc/godot-tp4-zwarren-jtheriault"
   }
 ]
