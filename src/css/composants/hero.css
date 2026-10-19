@@ -75,7 +75,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #Hero {
         padding: 0 0 0 0vw;
         display: flex;
@@ -86,9 +86,9 @@
         h1 {
             font-size: clamp(2.5vw, 8vw, 8vw);
             width: 50%;
-            height: 15vh;
+            height: 20vh;
             padding: 8vw 6vw 0;
-            line-height: 35px;
+            line-height: 55px;
             display: flex;
             text-align: center;
         }

@@ -20,13 +20,13 @@
 }
 
 .projet {
-    width: clamp(80%, 60%, 60%);
+    width: clamp(60%, 60%, 60%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--font-color);
     background-color: var(--bg-projet);
-    border-radius: 30px;
+    border-radius: 15px;
     margin: 30px 0;
     padding: 30px;
     border: 2px solid var(--primary-color );
@@ -87,7 +87,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     #projets h2 {
         font-size: 6vw;
@@ -123,7 +123,7 @@
 
 @media screen and (min-width: 1200px) {
     .projet {
-        width: 55%;
+        width: 60%;
         padding: 50px 80px;
         margin: 30px 0;
     }
