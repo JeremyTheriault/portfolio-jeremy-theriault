@@ -95,8 +95,8 @@ function setupModal() {
     }
 
     // Image
-    if (project.image) {
-      modalImg.src = project.image;
+    if (project.images) {
+      modalImg.src = project.images;
       modalImg.alt = project.title;
       modalImg.parentElement.style.display = "block";
     } else {
